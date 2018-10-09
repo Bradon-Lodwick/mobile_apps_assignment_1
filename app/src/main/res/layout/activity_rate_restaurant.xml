@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RateRestaurant">
+
+    <TextView
+        android:id="@+id/txt_rate_prompt"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/rate_prompt_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_rate_3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="rate"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_rate_prompt"
+        app:srcCompat="@drawable/star_unfilled" />
+
+    <ImageButton
+        android:id="@+id/btn_rate_2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="rate"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/btn_rate_3"
+        app:layout_constraintTop_toBottomOf="@+id/txt_rate_prompt"
+        app:srcCompat="@drawable/star_unfilled" />
+
+    <ImageButton
+        android:id="@+id/btn_rate_4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="rate"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btn_rate_3"
+        app:layout_constraintTop_toBottomOf="@+id/txt_rate_prompt"
+        app:srcCompat="@drawable/star_unfilled" />
+
+    <ImageButton
+        android:id="@+id/btn_rate_1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="rate"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/btn_rate_2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_rate_prompt"
+        app:srcCompat="@drawable/star_unfilled" />
+
+    <ImageButton
+        android:id="@+id/btn_rate_5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="rate"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btn_rate_4"
+        app:layout_constraintTop_toBottomOf="@+id/txt_rate_prompt"
+        app:srcCompat="@drawable/star_unfilled" />
+
+    <Button
+        android:id="@+id/btn_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:onClick="back"
+        android:text="@string/btn_rate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seek_bar" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="288dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:max="5"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_rate_3" />
+
+</android.support.constraint.ConstraintLayout>

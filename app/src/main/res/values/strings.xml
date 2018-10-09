@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Rate-urant</string>
+    <string name="instructions">Rate 5 restaurants to see their average rating!</string>
+    <string name="btn_rate">rate</string>
+    <string name="rate_prompt">Please give %1$s a rating:</string>
+    <string name="rate_prompt_default">Please rate the restaurant:</string>
+    <string name="btn_view_ratings">View Ratings</string>
+    <string name="title_summary">Summary</string>
+    <string name="low_rating_title">Low Ratings</string>
+    <string name="high_rating_title">High Ratings</string>
+
+    <!-- all the restaurant names -->
+    <string-array name="restaurants">
+        <item>Burrito Plaza</item>
+        <item>Pancake Bonanza</item>
+        <item>The Nosey Waiter</item>
+        <item>Burgundy Burgers</item>
+        <item>The Food Trough</item>
+    </string-array>
+</resources>
